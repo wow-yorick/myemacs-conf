@@ -33,3 +33,8 @@ git clone https://github.com/lienhua34/myemacs-conf ~/.emacs.d
 ```
 (load-file "/path/to/your/clone/dir/.entry.el")
 ```
+## 增加neotree 目录树管理
+- F5 toggle 目录树
+- F6 打开设置的workspace
+
+## 增加evil 插件  vim按键支持
