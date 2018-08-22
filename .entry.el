@@ -92,7 +92,7 @@
  (lambda () 
    (interactive) 
    (neotree-dir 
-    "/var/www/html")))
+    "~/www")))
 (defun neotree-close-up-node () 
   (interactive) 
   (neotree-select-up-node) 

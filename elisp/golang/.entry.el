@@ -4,6 +4,7 @@
 
 (setq golang-config-dir (concat root-config-dir "/elisp/golang"))
 
+;;; Code:
 (add-to-list 'load-path golang-config-dir)
 
 ;;;;;; go-mode ;;;;;;;
