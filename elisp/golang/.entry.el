@@ -8,8 +8,12 @@
 (add-to-list 'load-path golang-config-dir)
 
 ;;;;;; go-mode ;;;;;;;
+(setq gofmt-command "goimports")
 (require 'go-mode-autoloads)
-(add-hook 'before-save-hook 'gofmt-before-save)
+(add-hook 'before-save-hook (lambda()
+                              (gofmt-before-save)
+                              (go-remove-unused-imports)
+                              ))
 (add-hook 'go-mode-hook (lambda()
 			  (local-set-key (kbd "C-c C-r") 'go-remove-unused-imports)))
 
@@ -36,7 +40,7 @@
 	    (local-set-key (kbd "C-c C-e m") 'flymake-popup-current-error-menu)))
 
 
-;;(require 'go-flycheck)
+;(require 'go-flycheck)
 
 
 ;;;;; auto-complete ;;;;;;
