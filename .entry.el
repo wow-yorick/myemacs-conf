@@ -92,7 +92,7 @@
  (lambda () 
    (interactive) 
    (neotree-dir 
-    "~/www")))
+    "~/www/goproject/src/sundry/gostudy")))
 (defun neotree-close-up-node () 
   (interactive) 
   (neotree-select-up-node) 
