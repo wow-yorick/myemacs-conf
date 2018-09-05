@@ -58,7 +58,7 @@
 ;;(global-set-key (kbd "C-\\") 'toggle-input-method)
 
 ;;; auto-save
-(require 'auto-save)
+;;(require 'auto-save)
 
 ;;; Code:
 

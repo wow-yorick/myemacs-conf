@@ -105,4 +105,4 @@
 ;; Set different deadline (default: 5s)
 (setq flycheck-gometalinter-deadline "10s")
 
-(require 'go-guru)
+;;(require 'go-guru)
