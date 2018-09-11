@@ -58,6 +58,12 @@
 
                                         ;(load-file (concat root-config-dir "/elisp/groovy/.entry.el"))
 
+;; load php develop environment configure entry file
+(load-file 
+ (concat 
+  root-config-dir
+  "/elisp/php/.entry.el"))
+
 ;; 使用空格缩进
 (setq-default indent-tabs-mode nil)
 (setq-default tab-width 4)
@@ -82,10 +88,13 @@
 
                                         ;neotree
 (require 'neotree)
+;; toggle tree
 (global-set-key 
  (kbd 
   "<f5>")
  'neotree-toggle)
+
+;; goto gostudy root dir
 (global-set-key 
  (kbd 
   "<f6>") 
@@ -93,6 +102,13 @@
    (interactive) 
    (neotree-dir 
     "~/www/goproject/src/sundry/gostudy")))
+
+;; goto current file root dir
+(global-set-key 
+ (kbd 
+  "<f4>")
+ 'neotree-find)
+
 (defun neotree-close-up-node () 
   (interactive) 
   (neotree-select-up-node) 
