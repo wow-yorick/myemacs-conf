@@ -215,3 +215,21 @@
 (global-set-key 
  "\M-;"
  'qiang-comment-dwim-line)
+
+
+;; org-mode
+(org-babel-do-load-languages
+ 'org-babel-load-languages
+ '((js         . t)
+   (emacs-lisp . t)
+   ;;(perl       . t)
+   ;;(scala      . t)
+   (clojure    . t)
+   (python     . t)
+   (ruby       . t)
+   (dot        . t)
+   (css        . t)
+   (sqlite        . t)
+   (dot        . t)
+   ;;(plantuml   . t)
+   (go . t)))
