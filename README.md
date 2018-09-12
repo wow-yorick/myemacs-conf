@@ -38,3 +38,6 @@ git clone https://github.com/lienhua34/myemacs-conf ~/.emacs.d
 - F6 打开设置的workspace
 
 ## 增加evil 插件  vim按键支持
+
+## 安装graphviz 支持生成图片 ##
+http://www.graphviz.org/
