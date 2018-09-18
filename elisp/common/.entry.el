@@ -1,4 +1,4 @@
-
+(set-default-font "-*-Source Code Pro-normal-normal-normal-*-14-*-*-*-m-0-iso10646-1")
 (setq common-config-dir (concat root-config-dir "/elisp/common"))
 
 (add-to-list 'load-path common-config-dir)
