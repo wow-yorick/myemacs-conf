@@ -107,4 +107,12 @@
 (scroll-bar-mode 0)
 
 (global-hl-line-mode 1)
+
+;;; 代码片段
+(require 'yasnippet)
+(yas-global-mode 1)
+
+;;;取消emacs lisp doc check
+(setq-default flycheck-disabled-checkers '(emacs-lisp-checkdoc))
+
 ;;; .emacs ends here

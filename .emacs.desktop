@@ -1,0 +1,367 @@
+;; -*- mode: emacs-lisp; coding: emacs-mule; -*-
+;; --------------------------------------------------------------------------
+;; Desktop File for Emacs
+;; --------------------------------------------------------------------------
+;; Created Tue Sep 18 15:33:44 2018
+;; Desktop file format version 208
+;; Emacs version 26.1
+
+;; Global section:
+(setq desktop-saved-frameset [frameset 1 (23456 43608 518454 0) (desktop . "208") "yudong@WSSHA126093G1J1.local" nil nil ((((minibuffer . t) (font-backend mac-ct) (fontsize . 0) (font . "-*-Menlo-normal-normal-normal-*-12-*-*-*-m-0-iso10646-1") (border-width . 0) (internal-border-width . 2) (right-divider-width . 0) (bottom-divider-width . 0) (vertical-scroll-bars) (horizontal-scroll-bars) (foreground-color . "black") (background-color . "#FFFFE0") (line-spacing) (left-fringe . 8) (right-fringe . 8) (no-special-glyphs) (undecorated) (ns-appearance . unbound) (ns-transparent-titlebar . unbound) (z-group) (no-focus-on-map) (no-accept-focus) (menu-bar-lines . 0) (tool-bar-lines . 0) (title) (icon-type) (auto-raise) (auto-lower) (cursor-type . box) (scroll-bar-width . 0) (scroll-bar-height . 0) (alpha) (fullscreen) (display-type . color) (background-mode . light) (cursor-color . "black") (environment) (mouse-color . "LawnGreen") (border-color . "black") (frameset--id . "CD2E-56DD-8297-910D") (frameset--mini t . t) (modeline . t) (unsplittable) (icon-name) (visibility . t) (display . "WSSHA126093G1J1.local") (explicit-name) (tool-bar-position . top) (height . 58) (width . 179) (left . 721) (top . 23)) ((min-height . 4) (min-width . 10) (min-height-ignore . 2) (min-width-ignore . 7) (min-height-safe . 1) (min-width-safe . 2) (min-pixel-height . 56) (min-pixel-width . 70) (min-pixel-height-ignore . 28) (min-pixel-width-ignore . 49) (min-pixel-height-safe . 14) (min-pixel-width-safe . 14)) leaf (pixel-width . 1269) (pixel-height . 798) (total-width . 181) (total-height . 57) (normal-height . 1.0) (normal-width . 1.0) (buffer "issue.go" (selected . t) (hscroll . 0) (fringes 8 8 nil) (margins 2) (scroll-bars nil 0 t nil 0 t) (vscroll . 0) (dedicated) (point . 333) (start . 1))))])
+(setq desktop-missing-file-warning nil)
+(setq tags-file-name nil)
+(setq tags-table-list nil)
+(setq search-ring nil)
+(setq regexp-search-ring '("\\<resultChan\\>" "\\<maxReads\\>" "\\<readerControl\\>" "\\<semaphore\\>" "\\<ReadLock\\>" "\\<performQueries\\>" "\\<pooledResources\\>" "\\<Start\\>"))
+(setq register-alist '((48 . "// Bing search will be added to this search session if this option\n// is provided.\nfunc Bing(s *searchSession) {\n	log.Println(\"search : Submit : Info : Adding Bing\")\n	s.searchers[\"bing\"] = bing{}\n}\n\n// Yahoo search will be enabled if this option is provided as an argument\n// to Submit.\nfunc Yahoo(s *searchSession) {\n	log.Println(\"search : Submit : Info : Adding Yahoo\")\n	s.searchers[\"yahoo\"] = yahoo{}\n}\n")))
+(setq file-name-history '("~/.emacs.d/elisp/common/" "~/www/goproject/src/sundry/gostudy/go-in-action/chapter7/patterns/search/main/main.go" "~/www/goproject/src/sundry/gostudy/go-in-action/chapter7/patterns/search/main/" "~/www/goproject/src/sundry/gostudy/go-in-action/chapter7/patterns/search/searchers.go" "~/www/goproject/src/sundry/gostudy/go-in-action/chapter7/patterns/search" "~/www/goproject/src/sundry/gostudy/go-in-action/chapter7/patterns/search/search.go" "~/www/goproject/src/sundry/gostudy/go-in-action/chapter7/patterns/search/main" "~/www/goproject/src/sundry/gostudy/go-in-action/chapter7/patterns/search" "~/www/goproject/src/sundry/gostudy/go-in-action/chapter7/patterns/" "~/www/goproject/src/sundry/gostudy/go-in-action/chapter7/patterns/semaphore/semaphore.go" "~/www/goproject/src/sundry/gostudy/go-in-action/chapter7/patterns/semaphore" "~/www/goproject/src/sundry/gostudy/go-in-action/chapter7/patterns/" "~/www/goproject/src/sundry/gostudy/go-in-action/chapter7/patterns/work/main/main.go" "~/www/goproject/src/sundry/gostudy/go-in-action/chapter7/patterns/work/main" "~/www/goproject/src/sundry/gostudy/go-in-action/chapter7/patterns/work" "~/www/goproject/src/sundry/gostudy/go-in-action/chapter7/patterns/work/work.go" "~/www/goproject/src/sundry/gostudy/go-in-action/chapter7/patterns/work" "~/www/goproject/src/sundry/gostudy/go-in-action/chapter7/patterns/" "~/www/goproject/src/sundry/gostudy/go-in-action/chapter7/patterns/work" "~/www/goproject/src/sundry/gostudy/go-in-action/chapter7/patterns/pool/main/main.go" "~/www/goproject/src/sundry/gostudy/go-in-action/chapter7/patterns/pool/pool.go" "~/www/goproject/src/sundry/gostudy/go-in-action/chapter7/patterns/pool/main" "~/www/goproject/src/sundry/gostudy/go-in-action/chapter7/patterns/pool" "~/www/goproject/src/sundry/gostudy/go-in-action/chapter7/patterns/" "~/.emacs"))
+
+;; Buffer section -- buffers listed in same order as in buffer list:
+(desktop-create-buffer 208
+  "/Users/yudong/www/goproject/src/sundry/gostudy/issue.go"
+  "issue.go"
+  'go-mode
+  '(undo-tree-mode auto-complete-mode linum-mode yas-minor-mode flymake-mode flycheck-mode highlight-parentheses-mode)
+  333
+  '(333 nil)
+  nil
+  nil
+  '((indent-tabs-mode . t) (buffer-display-time 23456 43608 130818 0) (buffer-file-coding-system . undecided-unix) (overwrite-mode))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/yudong/.emacs.d/elisp/common/.entry.el"
+  ".entry.el"
+  'emacs-lisp-mode
+  '(eldoc-mode undo-tree-mode auto-complete-mode linum-mode yas-minor-mode flycheck-mode highlight-parentheses-mode)
+  3061
+  '(3061 nil)
+  nil
+  nil
+  '((buffer-display-time 23456 43538 475699 0) (buffer-file-coding-system . utf-8-unix) (overwrite-mode))
+  '((mark-ring (3061 3062 3343 2 2))))
+
+(desktop-create-buffer 208
+  "/Users/yudong/.emacs"
+  ".emacs"
+  'emacs-lisp-mode
+  '(eldoc-mode undo-tree-mode auto-complete-mode linum-mode yas-minor-mode flycheck-mode highlight-parentheses-mode)
+  128
+  '(128 nil)
+  nil
+  nil
+  '((tab-width . 4) (buffer-display-time 23456 43534 392697 0) (buffer-file-coding-system . undecided-unix) (overwrite-mode))
+  '((mark-ring (128 128 128 128 128 89 128 128 128 89 89 128 128))))
+
+(desktop-create-buffer 208
+  nil
+  "common"
+  'dired-mode
+  '(linum-mode yas-minor-mode highlight-parentheses-mode)
+  309
+  '(nil nil)
+  t
+  '("/Users/yudong/.emacs.d/elisp/common/")
+  '((buffer-display-time 23456 43407 768397 0) (overwrite-mode))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/yudong/www/goproject/src/sundry/gostudy/go-in-action/chapter7/patterns/search/search.go"
+  "search.go"
+  'go-mode
+  '(undo-tree-mode auto-complete-mode linum-mode yas-minor-mode flymake-mode flycheck-mode highlight-parentheses-mode)
+  1234
+  '(1234 nil)
+  nil
+  nil
+  '((indent-tabs-mode . t) (buffer-display-time 23456 43361 870167 0) (buffer-file-coding-system . utf-8-unix) (overwrite-mode))
+  '((mark-ring (1231 1605 1605 1605 1605 952 952 1008 1828 979 1828 979 1828 979 1828 979))))
+
+(desktop-create-buffer 208
+  "/Users/yudong/www/goproject/src/sundry/gostudy/go-in-action/chapter7/patterns/search/main/main.go"
+  "main.go"
+  'go-mode
+  '(undo-tree-mode auto-complete-mode linum-mode yas-minor-mode flymake-mode flycheck-mode highlight-parentheses-mode)
+  127
+  '(127 nil)
+  nil
+  nil
+  '((indent-tabs-mode . t) (buffer-display-time 23456 42947 455366 0) (buffer-file-coding-system . utf-8-unix) (overwrite-mode))
+  '((mark-ring (490 125 334 355 125 124 177 175 211))))
+
+(desktop-create-buffer 208
+  "/Users/yudong/www/goproject/src/sundry/gostudy/go-in-action/chapter7/patterns/search/searchers.go"
+  "searchers.go"
+  'go-mode
+  '(undo-tree-mode auto-complete-mode linum-mode yas-minor-mode flymake-mode flycheck-mode highlight-parentheses-mode)
+  738
+  '(738 nil)
+  nil
+  nil
+  '((indent-tabs-mode . t) (buffer-display-time 23456 42208 132574 0) (buffer-file-coding-system . utf-8-unix) (overwrite-mode))
+  '((mark-ring (366 366 525 525 607 366 366 329 316 298 288 254))))
+
+(desktop-create-buffer 208
+  nil
+  "main"
+  'dired-mode
+  '(linum-mode yas-minor-mode highlight-parentheses-mode)
+  242
+  '(nil nil)
+  t
+  '("/Users/yudong/www/goproject/src/sundry/gostudy/go-in-action/chapter7/patterns/search/main/")
+  '((buffer-display-time 23456 40875 64668 0) (overwrite-mode))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/yudong/www/goproject/src/go-in-action-code/chapter7/patterns/search/search.go"
+  "search.go"
+  'go-mode
+  '(undo-tree-mode auto-complete-mode linum-mode yas-minor-mode flymake-mode flycheck-mode highlight-parentheses-mode)
+  1140
+  '(1054 nil)
+  nil
+  nil
+  '((indent-tabs-mode . t) (buffer-display-time 23456 40752 303217 0) (buffer-file-coding-system . undecided-unix) (overwrite-mode))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/yudong/www/goproject/src/go-in-action-code/chapter7/patterns/search/searchers.go"
+  "searchers.go"
+  'go-mode
+  '(undo-tree-mode auto-complete-mode linum-mode yas-minor-mode flymake-mode flycheck-mode highlight-parentheses-mode)
+  208
+  '(207 nil)
+  nil
+  nil
+  '((indent-tabs-mode . t) (buffer-display-time 23456 39776 546932 0) (buffer-file-coding-system . undecided-unix) (overwrite-mode))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/local/go/src/math/rand/rand.go"
+  "rand.go"
+  'go-mode
+  '(undo-tree-mode auto-complete-mode linum-mode yas-minor-mode flymake-mode flycheck-mode highlight-parentheses-mode)
+  10192
+  '(10192 nil)
+  t
+  nil
+  '((indent-tabs-mode . t) (buffer-display-time 23456 38925 696915 0) (buffer-file-coding-system . utf-8-unix) (overwrite-mode))
+  '((mark-ring (10192))))
+
+(desktop-create-buffer 208
+  "/usr/local/go/src/time/time.go"
+  "time.go"
+  'go-mode
+  '(undo-tree-mode auto-complete-mode linum-mode yas-minor-mode flymake-mode flycheck-mode highlight-parentheses-mode)
+  21381
+  '(21381 nil)
+  t
+  nil
+  '((indent-tabs-mode . t) (buffer-display-time 23456 38881 121626 0) (buffer-file-coding-system . utf-8-unix) (overwrite-mode))
+  '((mark-ring (22098 32039 33502 22030 21979 22098 22143 22343))))
+
+(desktop-create-buffer 208
+  "/usr/local/go/src/time/sleep.go"
+  "sleep.go"
+  'go-mode
+  '(undo-tree-mode auto-complete-mode linum-mode yas-minor-mode flymake-mode flycheck-mode highlight-parentheses-mode)
+  314
+  '(314 nil)
+  t
+  nil
+  '((indent-tabs-mode . t) (buffer-display-time 23456 38810 327946 0) (buffer-file-coding-system . utf-8-unix) (overwrite-mode))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  nil
+  "search"
+  'dired-mode
+  '(linum-mode yas-minor-mode highlight-parentheses-mode)
+  284
+  '(nil nil)
+  t
+  '("/Users/yudong/www/goproject/src/sundry/gostudy/go-in-action/chapter7/patterns/search/")
+  '((buffer-display-time 23456 38389 807906 0) (overwrite-mode))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  nil
+  "patterns"
+  'dired-mode
+  '(linum-mode yas-minor-mode highlight-parentheses-mode)
+  277
+  '(288 nil)
+  t
+  '("/Users/yudong/www/goproject/src/sundry/gostudy/go-in-action/chapter7/patterns/")
+  '((buffer-display-time 23456 37416 592004 0) (overwrite-mode))
+  '((mark-ring (288))))
+
+(desktop-create-buffer 208
+  "/Users/yudong/www/goproject/src/sundry/gostudy/go-in-action/chapter7/patterns/semaphore/semaphore.go"
+  "semaphore.go"
+  'go-mode
+  '(undo-tree-mode auto-complete-mode linum-mode yas-minor-mode flymake-mode flycheck-mode highlight-parentheses-mode)
+  306
+  '(306 nil)
+  nil
+  nil
+  '((indent-tabs-mode . t) (buffer-display-time 23456 37436 470567 0) (buffer-file-coding-system . utf-8-unix) (overwrite-mode))
+  '((mark-ring (306 306 938 893 3286 3286 3287 638 768 783 855 783 768 638 293 2810))))
+
+(desktop-create-buffer 208
+  "/usr/local/go/src/sync/waitgroup.go"
+  "waitgroup.go"
+  'go-mode
+  '(undo-tree-mode auto-complete-mode linum-mode yas-minor-mode flymake-mode flycheck-mode highlight-parentheses-mode)
+  2044
+  '(2044 nil)
+  t
+  nil
+  '((indent-tabs-mode . t) (buffer-display-time 23456 30365 901074 0) (buffer-file-coding-system . undecided-unix) (overwrite-mode))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  nil
+  "semaphore"
+  'dired-mode
+  '(linum-mode yas-minor-mode highlight-parentheses-mode)
+  240
+  '(nil nil)
+  t
+  '("/Users/yudong/www/goproject/src/sundry/gostudy/go-in-action/chapter7/patterns/semaphore/")
+  '((buffer-display-time 23456 25995 635391 0) (overwrite-mode))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/yudong/www/goproject/src/sundry/gostudy/go-in-action/chapter7/patterns/work/main/main.go"
+  "main.go"
+  'go-mode
+  '(undo-tree-mode auto-complete-mode linum-mode yas-minor-mode flymake-mode flycheck-mode highlight-parentheses-mode)
+  312
+  '(312 nil)
+  nil
+  nil
+  '((indent-tabs-mode . t) (buffer-display-time 23456 25927 424626 0) (buffer-file-coding-system . utf-8-unix) (overwrite-mode))
+  '((mark-ring (313 512 570 571 291 291 355))))
+
+(desktop-create-buffer 208
+  "/Users/yudong/www/goproject/src/sundry/gostudy/go-in-action/chapter7/patterns/work/work.go"
+  "work.go"
+  'go-mode
+  '(undo-tree-mode auto-complete-mode linum-mode yas-minor-mode flymake-mode flycheck-mode highlight-parentheses-mode)
+  378
+  '(378 nil)
+  nil
+  nil
+  '((indent-tabs-mode . t) (buffer-display-time 23456 25924 434647 0) (buffer-file-coding-system . utf-8-unix) (overwrite-mode))
+  '((mark-ring (468 468 468 468 170))))
+
+(desktop-create-buffer 208
+  nil
+  "main"
+  'dired-mode
+  '(linum-mode yas-minor-mode highlight-parentheses-mode)
+  240
+  '(nil nil)
+  t
+  '("/Users/yudong/www/goproject/src/sundry/gostudy/go-in-action/chapter7/patterns/work/main/")
+  '((buffer-display-time 23456 22128 947424 0) (overwrite-mode))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  nil
+  "work"
+  'dired-mode
+  '(linum-mode yas-minor-mode highlight-parentheses-mode)
+  282
+  '(nil nil)
+  t
+  '("/Users/yudong/www/goproject/src/sundry/gostudy/go-in-action/chapter7/patterns/work/")
+  '((buffer-display-time 23456 22122 855574 0) (overwrite-mode))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/yudong/www/goproject/src/sundry/gostudy/go-in-action/chapter7/patterns/pool/pool.go"
+  "pool.go"
+  'go-mode
+  '(undo-tree-mode auto-complete-mode linum-mode yas-minor-mode flymake-mode flycheck-mode highlight-parentheses-mode)
+  726
+  '(726 nil)
+  nil
+  nil
+  '((indent-tabs-mode . t) (buffer-display-time 23456 21647 160664 0) (buffer-file-coding-system . utf-8-unix) (overwrite-mode))
+  '((mark-ring (727 778 765 766 1141 1141 991))))
+
+(desktop-create-buffer 208
+  "/Users/yudong/www/goproject/src/sundry/gostudy/go-in-action/chapter7/patterns/pool/main/main.go"
+  "main.go"
+  'go-mode
+  '(undo-tree-mode auto-complete-mode linum-mode yas-minor-mode flymake-mode flycheck-mode highlight-parentheses-mode)
+  613
+  '(598 nil)
+  nil
+  nil
+  '((indent-tabs-mode . t) (buffer-display-time 23456 21614 410162 0) (buffer-file-coding-system . utf-8-unix) (overwrite-mode))
+  '((mark-ring (1136 788 782 859 757 828 828 740 781 740 781 740 781 740 781 740))))
+
+(desktop-create-buffer 208
+  nil
+  "pool"
+  'dired-mode
+  '(linum-mode yas-minor-mode highlight-parentheses-mode)
+  282
+  '(nil nil)
+  t
+  '("/Users/yudong/www/goproject/src/sundry/gostudy/go-in-action/chapter7/patterns/pool/")
+  '((buffer-display-time 23456 9345 395351 0) (overwrite-mode))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/yudong/www/goproject/src/sundry/gostudy/go-in-action/chapter7/patterns/runner/runner.go"
+  "runner.go"
+  'go-mode
+  '(undo-tree-mode auto-complete-mode linum-mode yas-minor-mode flymake-mode flycheck-mode highlight-parentheses-mode)
+  1136
+  '(1136 nil)
+  nil
+  nil
+  '((indent-tabs-mode . t) (buffer-display-time 23456 9357 317457 0) (buffer-file-coding-system . utf-8-unix) (overwrite-mode))
+  '((mark-ring (1136 1136 309 242 124 679 654 654 655 620 436 436 258 1042 1 1136))))
+
+(desktop-create-buffer 208
+  "/usr/local/go/src/os/signal/signal.go"
+  "signal.go"
+  'go-mode
+  '(undo-tree-mode auto-complete-mode linum-mode yas-minor-mode flymake-mode flycheck-mode highlight-parentheses-mode)
+  2178
+  '(2178 nil)
+  t
+  nil
+  '((indent-tabs-mode . t) (buffer-display-time 23456 8376 670389 0) (buffer-file-coding-system . undecided-unix) (overwrite-mode))
+  '((mark-ring (3076 3839 4109 5355 5383 5792 4109 3839 3081 5792 4109 3839 3081))))
+
+(desktop-create-buffer 208
+  "/Users/yudong/.emacs.d/elpa/yasnippet-20180916.2115/yasnippet.el"
+  "yasnippet.el"
+  'emacs-lisp-mode
+  '(eldoc-mode undo-tree-mode auto-complete-mode linum-mode yas-minor-mode flycheck-mode highlight-parentheses-mode)
+  210987
+  '(210987 nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-display-time 23456 8195 382823 0) (buffer-file-coding-system . utf-8-unix) (overwrite-mode))
+  '((mark-ring (210987 210966 1 1 211083 35751 35751 35670 35670 35670))))
+
+(desktop-create-buffer 208
+  nil
+  ".emacs"
+  'dired-mode
+  '(linum-mode yas-minor-mode highlight-parentheses-mode)
+  36
+  '(nil nil)
+  t
+  '("/Users/yudong/.emacs")
+  '((buffer-display-time 23456 43534 375174 0) (overwrite-mode))
+  '((mark-ring nil)))
+
