@@ -21,13 +21,13 @@
 ;; 具体问题可以参考https://github.com/purcell/exec-path-from-shell
 ;; 该插件在common目录下已经安装，此处可以直接使用
 (when (memq window-system '(mac ns))
-  (exec-path-from-shell-copy-env "GOPATH"))
-;; (setenv "GOPATH" (concat ""
-                        ;;"/Users/yudong/www/goproject:"
-                        ;; "/Users/yudong/www/example:"
-                        ;;"/usr/local/var/www/webcrawler:"
-                        ;;"/Users/yudong/go:"
-                        ;;"/usr/local/var/www/goproject"))
+  (exec-path-from-shell-initialize)
+  (exec-path-from-shell-copy-env "GOPATH")
+  (setenv "GOPATH" (concat ""
+                        "/Users/yudong/www/goproject:"
+                        "/Users/yudong/www/goproject/src/websocket:"
+                        "/Users/yudong/go:"
+                        )))
 
 ;;;;;; goflymake ;;;;;;
 ;; 如果你要使用goflymake，请参考https://github.com/dougm/goflymake先安装一下goflymake。
@@ -45,13 +45,13 @@
 	    (local-set-key (kbd "C-c C-e m") 'flymake-popup-current-error-menu)))
 
 
-;(require 'go-flycheck)
-
 
 ;;;;; auto-complete ;;;;;;
 ;; 如果要使用company-go，则需要先安装gocode，请参考
 ;; https://github.com/nsf/gocode
 (require 'go-autocomplete)
+(require 'auto-complete-config)
+(ac-config-default)
 
 ;;;;;; company-go ;;;;;;
 ;; company-go是auto-complete的一个替代品，比auto-complete小，
@@ -81,9 +81,9 @@
 
 
 ;;;;;; go-errcheck ;;;;;;
-(require 'go-errcheck)
-(add-hook 'go-mode-hook (lambda ()
-			  (local-set-key (kbd "C-c C-e c") 'go-errcheck)))
+;; (require 'go-errcheck)
+;; (add-hook 'go-mode-hook (lambda ()
+;; 			  (local-set-key (kbd "C-c C-e c") 'go-errcheck)))
 
 
 ;;;;;; flycheck ;;;;;;
@@ -93,6 +93,7 @@
 (require 'flycheck-gometalinter)
 (eval-after-load 'flycheck
   '(add-hook 'flycheck-mode-hook #'flycheck-gometalinter-setup))
+
 (add-hook 'after-init-hook #'global-flycheck-mode)
 ;; skips 'vendor' directories and sets GO15VENDOREXPERIMENT=1
 (setq flycheck-gometalinter-vendor t)
