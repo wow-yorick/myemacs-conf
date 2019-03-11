@@ -2,6 +2,7 @@
 #.entry.el#
 ac-comphist.dat
 elpa/
+tmp/
 .emacs.desktop
 .emacs.desktop.lock
 bookmarks
