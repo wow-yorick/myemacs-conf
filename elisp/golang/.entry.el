@@ -22,7 +22,12 @@
 ;; 该插件在common目录下已经安装，此处可以直接使用
 (when (memq window-system '(mac ns))
   (exec-path-from-shell-copy-env "GOPATH"))
-
+;; (setenv "GOPATH" (concat ""
+                        ;;"/Users/yudong/www/goproject:"
+                        ;; "/Users/yudong/www/example:"
+                        ;;"/usr/local/var/www/webcrawler:"
+                        ;;"/Users/yudong/go:"
+                        ;;"/usr/local/var/www/goproject"))
 
 ;;;;;; goflymake ;;;;;;
 ;; 如果你要使用goflymake，请参考https://github.com/dougm/goflymake先安装一下goflymake。
@@ -106,3 +111,4 @@
 (setq flycheck-gometalinter-deadline "10s")
 
 ;;(require 'go-guru)
+(require 'gotests)

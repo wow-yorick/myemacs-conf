@@ -12,6 +12,8 @@
        #'car
        package-archives))
 (package-initialize)
+;; 自动折行配置
+(toggle-truncate-lines 1)
 ;;;vim mode
 (require 'evil)
 (evil-mode 
@@ -101,7 +103,7 @@
  (lambda () 
    (interactive) 
    (neotree-dir 
-    "~/www/goproject/src/sundry/gostudy")))
+    "~/www/goproject/src/")))
 
 ;; goto current file root dir
 (global-set-key 
@@ -233,3 +235,10 @@
    (dot        . t)
    ;;(plantuml   . t)
    (go . t)))
+
+
+;; load test configure entry file
+(load-file 
+ (concat 
+  root-config-dir
+  "/test.el"))

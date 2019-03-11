@@ -2,4 +2,5 @@
 #.entry.el#
 ac-comphist.dat
 elpa/
+.emacs.desktop
 

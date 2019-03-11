@@ -2,6 +2,9 @@
 (eval-after-load 'php-mode
   '(require 'php-ext))
 
+;; php yasnippets 配置
+;;(require 'php-auto-yasnippets)
+
 (require 'web-mode)
 (add-to-list 'auto-mode-alist '("\\.phtml\\'" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.tpl\\.php\\'" . web-mode))
