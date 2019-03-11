@@ -4,5 +4,5 @@ ac-comphist.dat
 elpa/
 .emacs.desktop
 .emacs.desktop.lock
-bookmarks/
+bookmarks
 
