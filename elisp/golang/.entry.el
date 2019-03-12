@@ -24,8 +24,9 @@
   (exec-path-from-shell-initialize)
   (exec-path-from-shell-copy-env "GOPATH")
   (setenv "GOPATH" (concat ""
-                        "/Users/yudong/www/goproject:"
-                        "/Users/yudong/www/goproject/src/websocket:"
+                        "/usr/local/var/www/goproject/src/card:"
+                        "/usr/local/var/www/goproject:"
+                        "/usr/local/var/www/goproject/src/websocket:"
                         "/Users/yudong/go:"
                         )))
 
