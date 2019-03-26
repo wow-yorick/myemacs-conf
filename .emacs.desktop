@@ -1,1 +1,43 @@
+;; -*- mode: emacs-lisp; coding: emacs-mule; -*-
+;; --------------------------------------------------------------------------
+;; Desktop File for Emacs
+;; --------------------------------------------------------------------------
+;; Created Tue Mar 26 18:19:37 2019
+;; Desktop file format version 208
+;; Emacs version 26.1
+
+;; Global section:
+(setq desktop-saved-frameset [frameset 1 (23705 64697 955347 0) (desktop . "208") "yudong@WSSHA126093G1J1.local" nil nil ((((minibuffer . t) (font-backend mac-ct) (fontsize . 0) (font . "-*-Source Code Pro-normal-normal-normal-*-14-*-*-*-m-0-iso10646-1") (border-width . 0) (internal-border-width . 2) (right-divider-width . 0) (bottom-divider-width . 0) (vertical-scroll-bars) (horizontal-scroll-bars) (foreground-color . "black") (background-color . "#FFFFE0") (line-spacing) (left-fringe . 8) (right-fringe . 8) (no-special-glyphs) (undecorated) (ns-appearance . unbound) (ns-transparent-titlebar . unbound) (z-group) (no-focus-on-map) (no-accept-focus) (menu-bar-lines . 1) (tool-bar-lines . 1) (title) (icon-type) (auto-raise) (auto-lower) (cursor-type . box) (scroll-bar-width . 0) (scroll-bar-height . 0) (alpha) (fullscreen) (display-type . color) (background-mode . light) (cursor-color . "black") (environment) (mouse-color . "LawnGreen") (border-color . "black") (frameset--id . "5E02-64E8-C168-C66A") (frameset--mini t . t) (height . 36) (width . 80) (modeline . t) (unsplittable) (left . 745) (top . 186) (icon-name) (visibility . t) (display . "WSSHA126093G1J1.local") (explicit-name) (tool-bar-position . top)) ((min-height . 4) (min-width . 10) (min-height-ignore . 2) (min-width-ignore . 7) (min-height-safe . 1) (min-width-safe . 2) (min-pixel-height . 72) (min-pixel-width . 80) (min-pixel-height-ignore . 36) (min-pixel-width-ignore . 56) (min-pixel-height-safe . 18) (min-pixel-width-safe . 16)) leaf (pixel-width . 656) (pixel-height . 612) (total-width . 82) (total-height . 34) (normal-height . 1.0) (normal-width . 1.0) (buffer ".entry.el" (selected . t) (hscroll . 0) (fringes 8 8 nil) (margins 3) (scroll-bars nil 0 t nil 0 t) (vscroll . 0) (dedicated) (point . 2254) (start . 2099))))])
+(setq desktop-missing-file-warning nil)
+(setq tags-file-name nil)
+(setq tags-table-list nil)
+(setq search-ring nil)
+(setq regexp-search-ring '("comp"))
+(setq register-alist nil)
+(setq file-name-history '("~/.emacs.d/elisp/golang/.entry.el"))
+
+;; Buffer section -- buffers listed in same order as in buffer list:
+(desktop-create-buffer 208
+  "/Users/yudong/.emacs.d/elisp/golang/.entry.el"
+  ".entry.el"
+  'emacs-lisp-mode
+  '(eldoc-mode undo-tree-mode auto-complete-mode linum-mode yas-minor-mode highlight-parentheses-mode)
+  2254
+  '(2336 nil)
+  nil
+  nil
+  '((buffer-display-time 23705 64697 672109 0) (buffer-file-coding-system . utf-8-unix) (overwrite-mode))
+  '((mark-ring (1466 1466))))
+
+(desktop-create-buffer 208
+  "/Users/yudong/www/goproject/src/eticket/src/app/handler/user_ticket_query_test.go"
+  "user_ticket_query_test.go"
+  'go-mode
+  '(undo-tree-mode auto-complete-mode linum-mode yas-minor-mode flymake-mode highlight-parentheses-mode)
+  211
+  '(163 nil)
+  nil
+  nil
+  '((indent-tabs-mode . t) (buffer-display-time 23705 64696 239986 0) (buffer-file-coding-system . undecided-unix) (overwrite-mode))
+  '((mark-ring nil)))
 
