@@ -24,9 +24,10 @@
   (exec-path-from-shell-initialize)
   (exec-path-from-shell-copy-env "GOPATH")
   (setenv "GOPATH" (concat ""
-                        "/usr/local/var/www/goproject/src/card:"
-                        "/usr/local/var/www/goproject:"
-                        "/usr/local/var/www/goproject/src/websocket:"
+                        ;; "/usr/local/var/www/goproject/src/card:"
+                        ;; "/usr/local/var/www/goproject:"
+                        ;; "/usr/local/var/www/goproject/src/websocket:"
+                        "/usr/local/var/www/goproject/src/eticket:"
                         "/Users/yudong/go:"
                         )))
 
@@ -34,29 +35,29 @@
 ;; 如果你要使用goflymake，请参考https://github.com/dougm/goflymake先安装一下goflymake。
 ;; 如果你已经安装了go语言环境，并且设置了GOPATH环境变量，则可以直接运行下面命令安装goflymake：
 ;;    go get -u github.com/dougm/goflymake
-(require 'go-flymake)
-;; Nope, I want my copies in the system temp dir.
-(setq flymake-run-in-place nil)
-;; This lets me say where my temp dir is.
-(setq temporary-file-directory "~/.emacs.d/tmp/")
-(add-hook 'flymake-mode-hook
-	  (lambda()
-	    (local-set-key (kbd "C-c C-e n") 'flymake-goto-next-error)))
-(add-hook 'flymake-mode-hook
-	  (lambda()
-	    (local-set-key (kbd "C-c C-e p") 'flymake-goto-prev-error)))
-(add-hook 'flymake-mode-hook
-	  (lambda()
-	    (local-set-key (kbd "C-c C-e m") 'flymake-popup-current-error-menu)))
+;; (require 'go-flymake)
+;; ;; Nope, I want my copies in the system temp dir.
+;; (setq flymake-run-in-place nil)
+;; ;; This lets me say where my temp dir is.
+;; (setq temporary-file-directory "~/.emacs.d/tmp/")
+;; (add-hook 'flymake-mode-hook
+;; 	  (lambda()
+;; 	    (local-set-key (kbd "C-c C-e n") 'flymake-goto-next-error)))
+;; (add-hook 'flymake-mode-hook
+;; 	  (lambda()
+;; 	    (local-set-key (kbd "C-c C-e p") 'flymake-goto-prev-error)))
+;; (add-hook 'flymake-mode-hook
+;; 	  (lambda()
+;; 	    (local-set-key (kbd "C-c C-e m") 'flymake-popup-current-error-menu)))
 
 
 
 ;;;;; auto-complete ;;;;;;
 ;; 如果要使用company-go，则需要先安装gocode，请参考
 ;; https://github.com/nsf/gocode
-(require 'go-autocomplete)
-(require 'auto-complete-config)
-(ac-config-default)
+;;(require 'go-autocomplete)
+;;(require 'auto-complete-config)
+;;(ac-config-default)
 
 ;;;;;; company-go ;;;;;;
 ;; company-go是auto-complete的一个替代品，比auto-complete小，
@@ -95,26 +96,26 @@
 ;; https://github.com/favadi/flycheck-gometalinter
 ;; Install gometalinter and install all available checkers with:
 ;;    `gometalinter --install --update`
-;; (require 'flycheck-gometalinter)
-;; (eval-after-load 'flycheck
-;;   '(add-hook 'flycheck-mode-hook #'flycheck-gometalinter-setup))
+(require 'flycheck-gometalinter)
+(eval-after-load 'flycheck
+  '(add-hook 'flycheck-mode-hook #'flycheck-gometalinter-setup))
 
-;; (add-hook 'after-init-hook #'global-flycheck-mode)
-;; ;; skips 'vendor' directories and sets GO15VENDOREXPERIMENT=1
-;; (setq flycheck-gometalinter-vendor t)
-;; ;; only show errors
-;; ;; (setq flycheck-gometalinter-errors-only t)
-;; ;; only run fast linters
-;; (setq flycheck-gometalinter-fast t)
-;; ;; use in tests files
-;; (setq flycheck-gometalinter-test t)
-;; ;; disable linters
-;; (setq flycheck-gometalinter-disable-linters '("gotype" "gocyclo"))
-;; ;; Only enable selected linters
-;; ;; (setq flycheck-gometalinter-disable-all t)
-;; ;; (setq flycheck-gometalinter-enable-linters '("golint"))
-;; ;; Set different deadline (default: 5s)
-;; (setq flycheck-gometalinter-deadline "10s")
+(add-hook 'after-init-hook #'global-flycheck-mode)
+;; skips 'vendor' directories and sets GO15VENDOREXPERIMENT=1
+(setq flycheck-gometalinter-vendor t)
+;; only show errors
+;; (setq flycheck-gometalinter-errors-only t)
+;; only run fast linters
+(setq flycheck-gometalinter-fast t)
+;; use in tests files
+(setq flycheck-gometalinter-test t)
+;; disable linters
+(setq flycheck-gometalinter-disable-linters '("gotype" "gocyclo"))
+;; Only enable selected linters
+;; (setq flycheck-gometalinter-disable-all t)
+;; (setq flycheck-gometalinter-enable-linters '("golint"))
+;; Set different deadline (default: 5s)
+(setq flycheck-gometalinter-deadline "10s")
 
 ;;(require 'go-guru)
 (require 'gotests)
