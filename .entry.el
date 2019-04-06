@@ -61,10 +61,10 @@
                                         ;(load-file (concat root-config-dir "/elisp/groovy/.entry.el"))
 
 ;; load php develop environment configure entry file
-(load-file 
- (concat 
-  root-config-dir
-  "/elisp/php/.entry.el"))
+;; (load-file 
+;;  (concat 
+;;   root-config-dir
+;;   "/elisp/php/.entry.el"))
 
 ;; 使用空格缩进
 (setq-default indent-tabs-mode nil)
