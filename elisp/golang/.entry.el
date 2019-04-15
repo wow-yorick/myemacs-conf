@@ -58,12 +58,12 @@
 (require 'go-autocomplete)
 ;;(require 'auto-complete-config)
 ;;(ac-config-default)
-(setq ac-dwim t)
-(setq ac-auto-start nil)              ;auto complete using clang is CPU sensitive
-(ac-set-trigger-key "<M-tab>")
+;;(setq ac-dwim t)
+;;(setq ac-auto-start nil)              ;auto complete using clang is CPU sensitive
+;;(ac-set-trigger-key "<M-tab>")
 
 ;; define key M-TAB to manually active completion
-(define-key ac-mode-map (kbd "M-TAB") 'auto-complete)
+;;(define-key ac-mode-map (kbd "M-TAB") 'auto-complete)
 
 ;;;;;; company-go ;;;;;;
 ;; company-go是auto-complete的一个替代品，比auto-complete小，
