@@ -72,7 +72,7 @@
 (setq tab-width 4)
 
 (setq inhibit-startup-message t)        ;close start page
-(desktop-save-mode  t)                                     ;保存session
+;;(desktop-save-mode  t)                                     ;保存session
 (electric-pair-mode 
  t)                                     ;括号补全
 (custom-set-variables
