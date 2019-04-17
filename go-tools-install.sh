@@ -9,6 +9,9 @@ unset GOPROXY
 echo "GOPROXY OFF"
 }
 
+echo "install go lsp bingo"
+go get -u -v github.com/saibing/bingo
+return
 
 echo "install gocode"
 go get -u -v github.com/stamblerre/gocode
